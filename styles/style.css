@@ -5,9 +5,11 @@
 
 header {
   background-image: url(../images/nav-bar.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
-  font-family: "Caveat";
+  font-family: "Caveat", sans-serif;
   text-align: justify;
   letter-spacing: 2px;
   height: 100%;
@@ -45,14 +47,74 @@ nav ul li {
   list-style: none;
   display: inline-block;
   padding-left: 40px;
-  font-size: 24px;
+  font-size: 26px;
 }
 
-li a {
+h1 a, li a {
   color: #000000;
 }
 
-li a:hover {
+a:focus {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+blockquote {
+    border: none;
+    font-family: "Caveat", sans-serif;
+    font-size: 55px;
+    text-align: center;
+    width: 450px;
+    margin: 4em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    left: 20%;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 150px;
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    color: #FEE64F;
+}
+
+blockquote:after {
+    display: block;
+    padding-right: 10px;
+    content: "\201D";
+    font-size: 150px;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    color: #FEE64F;
+}
+
+blockquote cite {
+  color: #999999;
+  font-style: none;
+  font-size: 45px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+img {
+  width: 28em;
+  position: fixed;
+  bottom: 0px;
+  right: 80px;
 }
