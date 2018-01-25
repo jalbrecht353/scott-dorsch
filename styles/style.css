@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../images/nav-bar.jpg);
+  background-size: cover;
+  width: 100%;
+  font-family: "Caveat";
+  text-align: justify;
+  letter-spacing: 2px;
+  height: 100%;
+  padding: 2em 10%;
+}
+
+header h1, header nav {
+  display: inline-block;
+}
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+header h1 {
+  font-size: 48px;
+  height: 100%;
+  width: 50%;
+}
+
+header h1::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+header nav {
+  vertical-align: middle;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 40px;
+  font-size: 24px;
+}
+
+li a {
+  color: #000000;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
